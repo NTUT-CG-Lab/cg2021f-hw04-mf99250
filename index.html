@@ -518,16 +518,24 @@
 							// console.log('controls[ "eye_wink_right" ];', controls[ "eye_wink_right" ]);
 							break;
 						case "ウィンク":
-							controls[ "eye_happy_wink_left" ] = controls[ "ウィンク" ];
+							if (controls[ "eye_happy_wink_left" ] > controls[ "ウィンク" ]) {
+								controls[ "eye_happy_wink_left" ] = controls[ "ウィンク" ];
+							}		
 							break;
 						case "ウィンク右":
-							controls[ "eye_happy_wink_right" ] = controls[ "ウィンク右" ];
+							if (controls[ "eye_happy_wink_right" ] > controls[ "ウィンク右" ]) {
+								controls[ "eye_happy_wink_right" ] = controls[ "ウィンク右" ];
+							}
 							break;
 						case "ウィンク２":
-							controls[ "eye_wink_left" ] = controls[ "ウィンク２" ];
+							if (controls[ "eye_wink_left" ] < controls[ "ウィンク２" ]) {
+								controls[ "eye_wink_left" ] = controls[ "ウィンク２" ];
+							}
 							break;
 						case "ｳｨﾝｸ２右":
-							controls[ "eye_wink_right" ] = controls[ "ｳｨﾝｸ２右" ];
+							if (controls[ "eye_wink_right" ] < controls[ "ｳｨﾝｸ２右" ]) {
+								controls[ "eye_wink_right" ] = controls[ "ｳｨﾝｸ２右" ];
+							}
 							break;
 						case "びっくり":
 							controls[ "eye_surprised_left" ] = controls[ "びっくり" ];
